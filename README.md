@@ -30,6 +30,27 @@
 ## Overview  
 This project is a part of Udacity's Robotics Software Engineer Nanodegree Program. In this project, I used [ROSbot](https://github.com/husarion/rosbot_description) as a mobile robot and [aws-robomaker-small-house-world](https://github.com/aws-robotics/aws-robomaker-small-house-world) as a gazebo world to replicate realistic simulation.
 
+### Mapping:  
+* The script file that performs mapping is `test_slam.sh`. This script is used to manually test SLAM.
+
+### Localization and Navigation:  
+* The script file that performs localization and navigation is `test_navigation.sh`. This script file is used for manual navigation test. The robot should be able to navigate in the environment after a 2D Nav Goal command is issued.
+* The file starts map_server node, amcl from package navigation node and move_base from navigation package node.To know more about this package, checkout my other project focused on amcl pakgae [here](https://github.com/Vamshi2198/Where-am-I).
+
+### pick_objects.sh
+This script file runs pick_objects node from pick_objects package in addition to the `test_navigation.sh`. This file  will send multiple goals for the robot to reach.The robot travels to the desired pickup zone, displays a message that it reached its destination, waits 5 seconds, travels to the desired drop off zone, and displays a message that it reached the drop off zone.
+
+### add_marker.sh
+This script file runs add_marker node from add_marker package in addition to the `test_navigation.sh`. and  The node analyzes command line arguments, set marker properties and publishes topic visualization_marker to rviz.
+
+### home_service.sh
+The marker from 'add_marker.sh` should initially be published at the pickup zone. After 5 seconds it should be hidden. Then after another 5 seconds it should appear at the drop off zone. The home_service.sh file that will run all the nodes as:
+
+* Initially show the marker at the pickup zone.
+* Hide the marker once your robot reach the pickup zone.
+* Wait 5 seconds to simulate a pickup.
+* Show the marker at the drop off zone once your robot reaches it.
+
 ## Prerequisites
 * Gazebo >= 7.0  
 * ROS >= Kinetic  
