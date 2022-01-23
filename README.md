@@ -26,6 +26,7 @@
   <a href="#testing">Testing</a>
 </p>
 
+![](https://github.com/Vamshi2198/Where-am-I/blob/main/Where-am-I-GIF.gif)
 
 ## Overview  
 This project is a part of Udacity's Robotics Software Engineer Nanodegree Program. In this project, I used [ROSbot](https://github.com/husarion/rosbot_description) as a mobile robot and [aws-robomaker-small-house-world](https://github.com/aws-robotics/aws-robomaker-small-house-world) as a gazebo world to replicate realistic simulation.
