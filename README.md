@@ -32,10 +32,22 @@ This project is a part of Udacity's Robotics Software Engineer Nanodegree Progra
 
 ## Prerequisites
 * Gazebo >= 7.0  
-* ROS >= Kinetic
-* ROS rtabmap-ros package 
+* ROS >= Kinetic  
+* ROS navigation package  
 ```
-sudo apt-get install ros-${ROS_DISTRO}-rtabmap-ros
+sudo apt-get install ros-${ROS_DISTRO}-navigation
+```
+* ROS map_server package  
+```
+sudo apt-get install ros-${ROS_DISTRO}-map-server
+```
+* ROS move_base package  
+```
+sudo apt-get install ros-${ROS_DISTRO}-move-base
+```
+* ROS amcl package  
+```
+sudo apt-get install ros-${ROS_DISTRO}-amcl
 ```
 * make >= 4.1(mac, linux), 3.81(Windows)
   * Linux: make is installed by default on most Linux distros
