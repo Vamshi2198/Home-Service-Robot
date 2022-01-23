@@ -49,6 +49,10 @@ sudo apt-get install ros-${ROS_DISTRO}-move-base
 ```
 sudo apt-get install ros-${ROS_DISTRO}-amcl
 ```
+* xterm
+```
+sudo apt-get install -y xterm
+```
 * make >= 4.1(mac, linux), 3.81(Windows)
   * Linux: make is installed by default on most Linux distros
   * Mac: [install Xcode command line tools to get make](https://developer.apple.com/xcode/features/)
@@ -117,12 +121,12 @@ $ source /opt/ros/${ROS_DISTRO}/setup.bash
 ```
 #### Note : The world file proivided is empy because it only contains the url of remote repository, for this purpose you need to clone the aws-bookstore-world and place it inside your src folder. Also, delete the folder named aws-robomaker-bookstore-world manually before cloning.
 ```sh
-$ cd /home/workspace/catkin_ws/src/Map-My-World/src/
+$ cd /home/workspace/catkin_ws/src/Home-Service-Robot/src/
 $ git clone https://github.com/aws-robotics/aws-robomaker-small-house-world
 ```
 #### Also, repeat the same with teleop_twist_keyboard packages. i.e, remove the empty file folder and clone the packages
 ```sh
-$ cd /home/workspace/catkin_ws/src/Map-My-World/src/
+$ cd /home/workspace/catkin_ws/src/Home-Service-Robot/src/
 $ git clone https://github.com/ros-teleop/teleop_twist_keyboard
 ```
 #### Build the `Home-Service-Robot` project
