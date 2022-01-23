@@ -172,7 +172,7 @@ if you want to test individual scrpits follow the same procedure as above.
 
 
 ## Testing
-
+After launching the `home_service.sh` script file, you can see the marker appears in blue and is picked up and dropped off depending on the location parameters.
 
 The code was tested on the following specifications:
 - **Processor:** `Intel Core i7-10875H`
